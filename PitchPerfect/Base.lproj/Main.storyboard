@@ -19,21 +19,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dB-ow-jMa">
-                                <rect key="frame" x="163" y="328.5" width="49" height="30"/>
+                                <rect key="frame" x="163" y="329" width="49" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Record"/>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yw3-Lg-fwa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gr1-hu-hD2">
+                                <rect key="frame" x="134" y="436" width="106" height="30"/>
+                                <state key="normal" title="Stop Recording"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNb-KO-k4x">
+                                <rect key="frame" x="137" y="394" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6dB-ow-jMa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XQ8-7A-AdT"/>
+                            <constraint firstItem="PNb-KO-k4x" firstAttribute="top" secondItem="6dB-ow-jMa" secondAttribute="bottom" constant="35" id="i5H-aZ-5DH"/>
+                            <constraint firstItem="Gr1-hu-hD2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iUx-dF-Gvl"/>
+                            <constraint firstItem="Gr1-hu-hD2" firstAttribute="top" secondItem="PNb-KO-k4x" secondAttribute="bottom" constant="21" id="pig-92-mUI"/>
                             <constraint firstItem="6dB-ow-jMa" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xWH-6j-ORu"/>
+                            <constraint firstItem="PNb-KO-k4x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zUX-2j-Ufa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="recordingLabel" destination="PNb-KO-k4x" id="0G7-vF-ymG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
