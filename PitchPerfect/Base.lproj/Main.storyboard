@@ -26,14 +26,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNb-KO-k4x">
-                                <rect key="frame" x="137" y="457" width="102" height="21"/>
+                                <rect key="frame" x="137" y="427" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gr1-hu-hD2">
-                                <rect key="frame" x="135" y="512" width="106" height="30"/>
-                                <state key="normal" title="Stop Recording"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gr1-hu-hD2">
+                                <rect key="frame" x="110.5" y="464" width="155" height="155"/>
+                                <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kIL-lN-sQv"/>
                                 </connections>
@@ -42,11 +42,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6dB-ow-jMa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8hj-VO-oMN"/>
-                            <constraint firstItem="Gr1-hu-hD2" firstAttribute="top" secondItem="PNb-KO-k4x" secondAttribute="bottom" constant="34" id="L1G-zf-7Ac"/>
+                            <constraint firstItem="Gr1-hu-hD2" firstAttribute="top" secondItem="PNb-KO-k4x" secondAttribute="bottom" constant="16" id="L1G-zf-7Ac"/>
                             <constraint firstItem="PNb-KO-k4x" firstAttribute="centerX" secondItem="6dB-ow-jMa" secondAttribute="centerX" id="Qel-4b-b0T"/>
                             <constraint firstItem="Gr1-hu-hD2" firstAttribute="centerX" secondItem="PNb-KO-k4x" secondAttribute="centerX" id="piC-Hv-GFq"/>
                             <constraint firstItem="6dB-ow-jMa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ryG-eU-2hB"/>
-                            <constraint firstItem="PNb-KO-k4x" firstAttribute="top" secondItem="6dB-ow-jMa" secondAttribute="bottom" constant="46" id="xRz-I9-aCa"/>
+                            <constraint firstItem="PNb-KO-k4x" firstAttribute="top" secondItem="6dB-ow-jMa" secondAttribute="bottom" constant="16" id="xRz-I9-aCa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -63,5 +63,6 @@
     </scenes>
     <resources>
         <image name="Record" width="155" height="155"/>
+        <image name="Stop" width="155" height="155"/>
     </resources>
 </document>
