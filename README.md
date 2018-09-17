@@ -19,6 +19,8 @@ This app was tested on iOS simulators and on a **real device** - **iPad Mini 3**
 
 The project uses the following technologies / frameworks :
 
+* Swift 4
+* iOS 11
 * UIKit
 * AVFoundation
 * UINavigationController
